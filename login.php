@@ -1,7 +1,8 @@
 <?php
 session_start();
 $errors = array();
-$db = mysqli_connect('localhost', 'project2user', 'raja', 'proejct2');
+// insert config.php
+require_once "config.php";
 
 if (isset($_POST['login'])) {
   $username = mysqli_real_escape_string($db, $_POST['username']);

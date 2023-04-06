@@ -19,5 +19,7 @@ This is a simple ecommerce website with plain php. It has a simple admin panel w
     project2Database.sql
     ```
 
-3. Change the database credentials 
+3. Change the database credentials  in config.php file
     
+4. start writing your code on login.php and register.php files to beautify the UI
+
