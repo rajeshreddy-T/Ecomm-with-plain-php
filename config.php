@@ -7,12 +7,12 @@ define('DB_USER','project2user');
 define('DB_PASS','raja');
 define('DB_NAME','project2');
 // Establish database connection.
-try
-{
-$dbh = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME,DB_USER, DB_PASS);
-}
-catch (PDOException $e)
-{
-exit("Error: " . $e->getMessage());
-}
+$db = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+  
 ?>

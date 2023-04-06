@@ -1,5 +1,10 @@
 <?php
 session_start();
+// insert config.php
+
+include('config.php');
+ include('header.php');
+
 ?>
 <!DOCTYPE html>
 <html>

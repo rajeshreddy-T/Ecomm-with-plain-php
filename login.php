@@ -2,7 +2,9 @@
 session_start();
 $errors = array();
 // insert config.php
-require_once "config.php";
+
+include('config.php');
+ include('header.php');
 
 if (isset($_POST['login'])) {
   $username = mysqli_real_escape_string($db, $_POST['username']);
